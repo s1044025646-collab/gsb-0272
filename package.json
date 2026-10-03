@@ -1,0 +1,23 @@
+{
+  "name": "datecal",
+  "version": "1.0.0",
+  "description": "datecal backend",
+  "main": "dist/src/cli.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test dist/test/*.test.js",
+    "start": "npm run build && node dist/src/cli.js serve",
+    "cli": "node dist/src/cli.js",
+    "demo": "node scripts/demo.js"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  }
+}
+
+
+
+
